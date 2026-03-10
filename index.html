@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ReConnect – Tienda de teléfonos renovados con garantía. Ahorra en iPhone, Samsung y más marcas." />
+  <title>ReConnect | Teléfonos Renovados</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== SKIP LINK ===================== -->
+  <a class="skip-link" href="#main-content">Ir al contenido principal</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" role="banner">
+    <div class="header-top">
+      <p class="header-promo">
+        🔁 Hasta <strong>40% de descuento</strong> en equipos seleccionados.
+        <a href="#ofertas">¡Ver ofertas!</a>
+      </p>
+      <nav class="header-top-nav" aria-label="Navegación secundaria">
+        <a href="#contacto">Contáctanos</a>
+        <a href="#garantia">Garantía</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+
+    <div class="header-main">
+      <!-- Logo -->
+      <a href="index.html" class="logo" aria-label="ReConnect – Inicio">
+        <img src="img/logo.svg" alt="ReConnect logo" width="150" height="40" />
+        <!-- Fallback si no hay logo SVG -->
+        <span class="logo-text" aria-hidden="true">ReConnect</span>
+      </a>
+
+      <!-- Buscador -->
+      <form class="search-form" role="search" action="#" method="get">
+        <label for="search-input" class="sr-only">Buscar producto</label>
+        <input
+          id="search-input"
+          type="search"
+          name="q"
+          placeholder="Busca por marca, modelo o categoría…"
+          autocomplete="off"
+          aria-label="Buscar producto"
+        />
+        <button type="submit" aria-label="Realizar búsqueda">
+          <img src="img/search.svg" alt="Icono de lupa" aria-hidden="true" width="20" height="20" />
+        </button>
+      </form>
+
+      <!-- Acciones de usuario -->
+      <div class="header-actions">
+        <a href="#cuenta" class="btn-icon" aria-label="Mi cuenta">
+          <img src="img/user.svg" alt="Icono de usuario" aria-hidden="true" width="24" height="24" />
+          <span>Mi cuenta</span>
+        </a>
+        <a href="#carrito" class="btn-icon" aria-label="Carrito de compras, 0 productos">
+          <img src="img/cart.svg" alt="Icono de carrito de compras" aria-hidden="true" width="24" height="24" />
+          <span>Carrito</span>
+          <span class="cart-badge" aria-live="polite">0</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Navegación principal -->
+    <nav class="main-nav" aria-label="Navegación principal">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Abrir menú">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <ul id="main-menu" role="list">
+        <li>
+          <button class="nav-item has-dropdown" aria-haspopup="true" aria-expanded="false">
+            iPhone
+          </button>
+          <ul class="dropdown" role="list" aria-label="Submenú iPhone">
+            <li><a href="#iphone-15">iPhone 15</a></li>
+            <li><a href="#iphone-14">iPhone 14</a></li>
+            <li><a href="#iphone-13">iPhone 13</a></li>
+            <li><a href="#iphone-se">iPhone SE</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="nav-item has-dropdown" aria-haspopup="true" aria-expanded="false">
+            Samsung
+          </button>
+          <ul class="dropdown" role="list" aria-label="Submenú Samsung">
+            <li><a href="#galaxy-s">Galaxy S</a></li>
+            <li><a href="#galaxy-a">Galaxy A</a></li>
+            <li><a href="#galaxy-z">Galaxy Z (Plegables)</a></li>
+          </ul>
+        </li>
+        <li><a href="#otras-marcas" class="nav-item">Otras marcas</a></li>
+        <li><a href="#accesorios" class="nav-item">Accesorios</a></li>
+        <li><a href="#outlet" class="nav-item">Outlet</a></li>
+        <li>
+          <a href="#promociones" class="nav-item nav-item--promo">
+            <img src="img/tag.svg" alt="Icono de etiqueta" aria-hidden="true" width="16" height="16" />
+            Promociones
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===================== MAIN ===================== -->
+  <main id="main-content">
+
+    <!-- --------- HERO / BANNER PRINCIPAL --------- -->
+    <section class="hero" aria-label="Promoción destacada">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Equipos certificados · Garantía 12 meses</p>
+        <h1 class="hero-title">
+          Tecnología de primera<br />
+          <span class="hero-highlight">al mejor precio</span>
+        </h1>
+        <p class="hero-subtitle">
+          Teléfonos renovados con hasta <strong>40% de descuento</strong>.<br />
+          Revisados, certificados y listos para ti.
+        </p>
+        <div class="hero-ctas">
+          <a href="#catalogo" class="btn btn--primary">Ver catálogo</a>
+          <a href="#como-funciona" class="btn btn--secondary">¿Cómo funciona?</a>
+        </div>
+      </div>
+
+      <!-- Tarjetas de producto destacadas dentro del hero -->
+      <div class="hero-cards" aria-label="Productos destacados">
+        <article class="hero-card" aria-label="iPhone 14 Pro destacado">
+          <span class="badge badge--outlet">Outlet</span>
+          <img src="img/iPhone14Pro.webp" alt="iPhone 14 Pro en color blanco
+          " width="180" height="220" />
+          <h2 class="hero-card__model">iPhone 14 Pro</h2>
+          <p class="hero-card__storage">128 GB</p>
+          <p class="hero-card__price">
+            <span class="sr-only">Precio desde</span>
+            <span class="price-current">$8,490</span>
+            <span class="price-old" aria-label="Precio anterior $11,490">$11,490</span>
+          </p>
+          <a href="#iphone-14-pro" class="btn btn--card">Ver opciones</a>
+        </article>
+
+        <article class="hero-card" aria-label="iPhone 14 Pro Max destacado">
+          <span class="badge badge--outlet">Outlet</span>
+          <img src="img/iPhone14ProMax.webp" alt="iPhone 14 Pro Max en color morado oscuro" width="180" height="220" />
+          <h2 class="hero-card__model">iPhone 14 Pro Max</h2>
+          <p class="hero-card__storage">128 GB</p>
+          <p class="hero-card__price">
+            <span class="sr-only">Precio desde</span>
+            <span class="price-current">$9,490</span>
+            <span class="price-old" aria-label="Precio anterior $13,990">$13,990</span>
+          </p>
+          <a href="#iphone-14-pro-max" class="btn btn--card">Ver opciones</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- --------- BENEFICIOS --------- -->
+    <section class="benefits" aria-labelledby="benefits-title">
+      <h2 id="benefits-title" class="sr-only">Nuestros beneficios</h2>
+      <ul class="benefits-list" role="list">
+        <li class="benefit-item">
+          <img src="img/shield-user.svg" alt="Usuario seguro" aria-hidden="true" width="40" height="40" />
+          <div>
+            <strong>30 días</strong>
+            <span>de prueba</span>
+          </div>
+        </li>
+        <li class="benefit-item">
+          <img src="img/smartphone.svg" alt="smartphone" aria-hidden="true" width="40" height="40" />
+          <div>
+            <strong>Garantía</strong>
+            <span>12 meses</span>
+          </div>
+        </li>
+        <li class="benefit-item">
+          <img src="img/percent.svg" alt="Simbolo de porcentaje" aria-hidden="true" width="40" height="40" />
+          <div>
+            <strong>Cuotas 0%</strong>
+            <span>de interés</span>
+          </div>
+        </li>
+        <li class="benefit-item">
+          <img src="img/handbag.svg" alt="Bolsa de compras" aria-hidden="true" width="40" height="40" />
+          <div>
+            <strong>Compra</strong>
+            <span>Sostenible</span>
+          </div>
+        </li>
+        <li class="benefit-item">
+          <img src="img/van.svg" alt="Van" aria-hidden="true" width="40" height="40" />
+          <div>
+            <strong>Envío gratis</strong>
+            <span>en pedidos +$5,000</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- --------- CATEGORÍAS --------- -->
+    <section class="categories" id="categorias" aria-labelledby="categories-title">
+      <h2 id="categories-title" class="section-title">¡Conoce nuestras ofertas!</h2>
+      <a href="#catalogo" class="section-link">Ver todos</a>
+
+      <ul class="categories-grid" role="list">
+        <li>
+          <a href="#iphone" class="category-card category-card--featured">
+            <img src="img/iPhones.webp" alt="Varios modelos de iPhone" width="300" height="180" />
+            <span class="category-card__label">iPhone</span>
+          </a>
+        </li>
+        <li>
+          <a href="#mac" class="category-card">
+            <img src="img/MacbookPro.webp" alt="MacBook Pro" width="140" height="120" />
+            <span class="category-card__label">Mac</span>
+          </a>
+        </li>
+        <li>
+          <a href="#samsung" class="category-card">
+            <img src="img/SamsungS24.webp" alt="Samsung Galaxy S24" width="140" height="120" />
+            <span class="category-card__label">Samsung</span>
+          </a>
+        </li>
+        <li>
+          <a href="#ipad" class="category-card">
+            <img src="img/iPadPro.webp" alt="iPad Pro" width="140" height="120" />
+            <span class="category-card__label">iPad</span>
+          </a>
+        </li>
+        <li>
+          <a href="#outlet" class="category-card">
+            <img src="img/liquidacion.webp" alt="Equipos en liquidación" width="140" height="120" />
+            <span class="category-card__label">Full Saldos</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- --------- CATÁLOGO DE PRODUCTOS --------- -->
+    <section class="catalog" id="catalogo" aria-labelledby="catalog-title">
+      <h2 id="catalog-title" class="section-title">Catálogo de productos</h2>
+
+      <!-- Filtros -->
+      <div class="catalog-filters" role="group" aria-label="Filtrar productos">
+        <button class="filter-btn filter-btn--active" aria-pressed="true">Todos</button>
+        <button class="filter-btn" aria-pressed="false">iPhone</button>
+        <button class="filter-btn" aria-pressed="false">Samsung</button>
+        <button class="filter-btn" aria-pressed="false">Outlet</button>
+        <button class="filter-btn" aria-pressed="false">Accesorios</button>
+      </div>
+
+      <!-- Grid de productos -->
+      <ul class="products-grid" role="list" aria-label="Listado de productos">
+
+        <!-- Producto 1 -->
+        <li>
+          <article class="product-card" aria-label="iPhone 15 Plus">
+            <div class="product-card__image-wrap">
+              <span class="badge badge--discount" aria-label="35% de descuento">35% off</span>
+              <img src="img/iPhone15Plus.webp" alt="iPhone 15 Plus en color verde" width="200" height="220" loading="lazy" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">iPhone 15 Plus</h3>
+              <p class="product-card__price">
+                Desde <span class="price-current">$9,490</span>
+                <span class="price-old" aria-label="Precio anterior $14,490">$14,490</span>
+              </p>
+              <p class="product-card__installments">
+                <img src="img/credit-card.svg" alt="" aria-hidden="true" width="16" height="16" />
+                6x de $1,582 sin interés
+              </p>
+              <a href="#iphone-15-plus" class="btn btn--primary btn--full">Opciones</a>
+            </div>
+          </article>
+        </li>
+
+        <!-- Producto 2 -->
+        <li>
+          <article class="product-card product-card--out-of-stock" aria-label="iPhone 16 – Agotado">
+            <div class="product-card__image-wrap">
+              <span class="badge badge--sold-out" aria-label="Agotado">Agotado</span>
+              <span class="badge badge--discount" aria-label="25% de descuento">25% off</span>
+              <img src="img/iPhone16.webp" alt="iPhone 16 en color negro" width="200" height="220" loading="lazy" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">iPhone 16</h3>
+              <p class="product-card__price">
+                Desde <span class="price-current">$13,240</span>
+                <span class="price-old" aria-label="Precio anterior $17,740">$17,740</span>
+              </p>
+              <p class="product-card__installments">
+                <img src="img/credit-card.svg" alt="" aria-hidden="true" width="16" height="16" />
+                6x de $2,207 sin interés
+              </p>
+              <button class="btn btn--disabled btn--full" disabled aria-disabled="true">Sin stock</button>
+            </div>
+          </article>
+        </li>
+
+        <!-- Producto 3 -->
+        <li>
+          <article class="product-card" aria-label="iPhone 14 Plus">
+            <div class="product-card__image-wrap">
+              <span class="badge badge--discount" aria-label="18% de descuento">18% off</span>
+              <img src="img/iPhone14Plus.webp" alt="iPhone 14 Plus en color lila" width="200" height="220" loading="lazy" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">iPhone 14 Plus</h3>
+              <p class="product-card__price">
+                Desde <span class="price-current">$8,240</span>
+                <span class="price-old" aria-label="Precio anterior $9,990">$9,990</span>
+              </p>
+              <p class="product-card__installments">
+                <img src="img/credit-card.svg" alt="" aria-hidden="true" width="16" height="16" />
+                6x de $1,373 sin interés
+              </p>
+              <a href="#iphone-14-plus" class="btn btn--primary btn--full">Opciones</a>
+            </div>
+          </article>
+        </li>
+
+        <!-- Producto 4 -->
+        <li>
+          <article class="product-card" aria-label="iPhone 14 Pro Max">
+            <div class="product-card__image-wrap">
+              <span class="badge badge--discount" aria-label="32% de descuento">32% off</span>
+              <img src="img/iPhone14ProMax.webp" alt="iPhone 14 Pro Max en color morado profundo" width="200" height="220" loading="lazy" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">iPhone 14 Pro Max</h3>
+              <p class="product-card__price">
+                Desde <span class="price-current">$9,490</span>
+                <span class="price-old" aria-label="Precio anterior $13,990">$13,990</span>
+              </p>
+              <p class="product-card__installments">
+                <img src="img/credit-card.svg" alt="" aria-hidden="true" width="16" height="16" />
+                6x de $1,582 sin interés
+              </p>
+              <a href="#iphone-14-pro-max" class="btn btn--primary btn--full">Opciones</a>
+            </div>
+          </article>
+        </li>
+
+        <!-- Producto 5 -->
+        <li>
+          <article class="product-card" aria-label="iPhone 16 Pro">
+            <div class="product-card__image-wrap">
+              <span class="badge badge--discount" aria-label="32% de descuento">32% off</span>
+              <img src="img/iPhone16Pro.webp" alt="iPhone 16 Pro en color titanio natural" width="200" height="220" loading="lazy" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">iPhone 16 Pro</h3>
+              <p class="product-card__price">
+                Desde <span class="price-current">$15,540</span>
+                <span class="price-old" aria-label="Precio anterior $22,790">$22,790</span>
+              </p>
+              <p class="product-card__installments">
+                <img src="img/credit-card.svg" alt="" aria-hidden="true" width="16" height="16" />
+                6x de $2,590 sin interés
+              </p>
+              <a href="#iphone-16-pro" class="btn btn--primary btn--full">Opciones</a>
+            </div>
+          </article>
+        </li>
+
+        <!-- Producto 6 -->
+        <li>
+          <article class="product-card" aria-label="iPhone 15 Pro">
+            <div class="product-card__image-wrap">
+              <span class="badge badge--discount" aria-label="25% de descuento">25% off</span>
+              <img src="img/iPhone15Pro.webp" alt="iPhone 15 Pro en color titanio azul" width="200" height="220" loading="lazy" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">iPhone 15 Pro</h3>
+              <p class="product-card__price">
+                Desde <span class="price-current">$12,040</span>
+                <span class="price-old" aria-label="Precio anterior $15,990">$15,990</span>
+              </p>
+              <p class="product-card__installments">
+                <img src="img/credit-card.svg" alt="" aria-hidden="true" width="16" height="16" />
+                6x de $2,007 sin interés
+              </p>
+              <a href="#iphone-15-pro" class="btn btn--primary btn--full">Opciones</a>
+            </div>
+          </article>
+        </li>
+
+        <!-- Producto 7 -->
+        <li>
+          <article class="product-card" aria-label="iPhone 14 Pro">
+            <div class="product-card__image-wrap">
+              <span class="badge badge--discount" aria-label="26% de descuento">26% off</span>
+              <img src="img/iPhone14Pro.webp" alt="iPhone 14 Pro en color plateado" width="200" height="220" loading="lazy" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">iPhone 14 Pro</h3>
+              <p class="product-card__price">
+                Desde <span class="price-current">$8,490</span>
+                <span class="price-old" aria-label="Precio anterior $11,490">$11,490</span>
+              </p>
+              <p class="product-card__installments">
+                <img src="img/credit-card.svg" alt="" aria-hidden="true" width="16" height="16" />
+                6x de $1,415 sin interés
+              </p>
+              <a href="#iphone-14-pro" class="btn btn--primary btn--full">Opciones</a>
+            </div>
+          </article>
+        </li>
+
+        <!-- Producto 8 -->
+        <li>
+          <article class="product-card" aria-label="iPhone 13 Pro Max">
+            <div class="product-card__image-wrap">
+              <span class="badge badge--discount" aria-label="22% de descuento">22% off</span>
+              <img src="img/iPhone13ProMax.webp" alt="iPhone 13 Pro Max en color dorado" width="200" height="220" loading="lazy" />
+            </div>
+            <div class="product-card__info">
+              <h3 class="product-card__name">iPhone 13 Pro Max</h3>
+              <p class="product-card__price">
+                Desde <span class="price-current">$8,240</span>
+                <span class="price-old" aria-label="Precio anterior $10,490">$10,490</span>
+              </p>
+              <p class="product-card__installments">
+                <img src="img/credit-card.svg" alt="" aria-hidden="true" width="16" height="16" />
+                6x de $1,373 sin interés
+              </p>
+              <a href="#iphone-13-pro-max" class="btn btn--primary btn--full">Opciones</a>
+            </div>
+          </article>
+        </li>
+
+      </ul>
+
+      <div class="catalog-more">
+        <a href="#todos" class="btn btn--outline">Ver todos los productos</a>
+      </div>
+    </section>
+
+    <!-- --------- ¿CÓMO FUNCIONA? --------- -->
+    <section class="how-it-works" id="como-funciona" aria-labelledby="how-title">
+      <h2 id="how-title" class="section-title">¿Cómo funciona ReConnect?</h2>
+      <p class="section-subtitle">
+        Nuestros equipos pasan por un riguroso proceso de revisión y certificación.
+      </p>
+
+      <ol class="steps-list" role="list">
+        <li class="step">
+          <span class="step__number" aria-hidden="true">01</span>
+          <img src="img/mouse-pointer-click.svg" alt="" aria-hidden="true" width="60" height="60" />
+          <h3 class="step__title">Elige tu equipo</h3>
+          <p class="step__desc">
+            Explora nuestro catálogo de iPhones, Samsung y más marcas renovadas.
+          </p>
+        </li>
+        <li class="step">
+          <span class="step__number" aria-hidden="true">02</span>
+          <img src="img/shield-check.svg" alt="" aria-hidden="true" width="60" height="60" />
+          <h3 class="step__title">Certificación técnica</h3>
+          <p class="step__desc">
+            Cada equipo es revisado en más de 50 puntos de calidad por nuestros técnicos.
+          </p>
+        </li>
+        <li class="step">
+          <span class="step__number" aria-hidden="true">03</span>
+          <img src="img/scan-barcode.svg" alt="" aria-hidden="true" width="60" height="60" />
+          <h3 class="step__title">Compra con confianza</h3>
+          <p class="step__desc">
+            Paga en cuotas sin interés y recibe tu equipo con garantía de 12 meses.
+          </p>
+        </li>
+        <li class="step">
+          <span class="step__number" aria-hidden="true">04</span>
+          <img src="img/wrench.svg" alt="" aria-hidden="true" width="60" height="60" />
+          <h3 class="step__title">Soporte siempre activo</h3>
+          <p class="step__desc">
+            Si algo falla, nuestro equipo de soporte está disponible para ayudarte.
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- --------- TESTIMONIOS --------- -->
+    <section class="testimonials" aria-labelledby="testimonials-title">
+      <h2 id="testimonials-title" class="section-title">Lo que dicen nuestros clientes</h2>
+
+      <ul class="testimonials-list" role="list">
+        <li>
+          <blockquote class="testimonial-card">
+            <p>"Compré un iPhone 14 Pro y quedé encantada. Llegó perfecto, como nuevo, y el precio fue increíble."</p>
+            <footer>
+              <cite class="testimonial-card__author">— Andrea M., Ciudad de México</cite>
+              <span class="testimonial-card__stars" aria-label="5 de 5 estrellas">★★★★★</span>
+            </footer>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote class="testimonial-card">
+            <p>"Increíble servicio. Consulté por chat y me ayudaron a elegir el mejor modelo para mi presupuesto."</p>
+            <footer>
+              <cite class="testimonial-card__author">— Luis R., Guadalajara</cite>
+              <span class="testimonial-card__stars" aria-label="5 de 5 estrellas">★★★★★</span>
+            </footer>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote class="testimonial-card">
+            <p>"Ya llevo 6 meses con mi iPhone 15 renovado y funciona perfecto. La garantía me dio mucha tranquilidad."</p>
+            <footer>
+              <cite class="testimonial-card__author">— Sofía T., Monterrey</cite>
+              <span class="testimonial-card__stars" aria-label="4 de 5 estrellas">★★★★☆</span>
+            </footer>
+          </blockquote>
+        </li>
+      </ul>
+    </section>
+
+    <!-- --------- NEWSLETTER --------- -->
+    <section class="newsletter" aria-labelledby="newsletter-title">
+      <div class="newsletter-content">
+        <h2 id="newsletter-title" class="newsletter-title">¿No quieres perderte las mejores ofertas?</h2>
+        <p class="newsletter-subtitle">Suscríbete y recibe descuentos exclusivos directo en tu correo.</p>
+        <form class="newsletter-form" action="#" method="post" aria-label="Formulario de suscripción al boletín">
+          <label for="newsletter-email" class="sr-only">Correo electrónico</label>
+          <input
+            id="newsletter-email"
+            type="email"
+            name="email"
+            placeholder="Tu correo electrónico"
+            required
+            autocomplete="email"
+            aria-required="true"
+          />
+          <button type="submit" class="btn btn--primary">Suscribirme</button>
+        </form>
+        <p class="newsletter-disclaimer">
+          Sin spam. Puedes darte de baja en cualquier momento.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+
+      <!-- Marca -->
+      <div class="footer-brand">
+        <a href="index.html" class="logo" aria-label="ReConnect – Inicio">
+          <img src="img/logo.svg" alt="ReConnect logo" width="130" height="36" />
+          <span class="logo-text" aria-hidden="true">ReConnect</span>
+        </a>
+        <p>Teléfonos renovados con garantía. Compra inteligente, compra sostenible.</p>
+        <ul class="social-links" role="list" aria-label="Redes sociales">
+          <li>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram de ReConnect">
+              <img src="img/instagram.svg" alt="" aria-hidden="true" width="24" height="24" />
+            </a>
+          </li>
+          <li>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook de ReConnect">
+              <img src="img/facebook.svg" alt="" aria-hidden="true" width="24" height="24" />
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok de ReConnect">
+              <img src="img/twitter.svg" alt="" aria-hidden="true" width="24" height="24" />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Navegación de productos -->
+      <nav class="footer-nav" aria-label="Productos">
+        <h3 class="footer-nav__title">Productos</h3>
+        <ul role="list">
+          <li><a href="#iphone">iPhone</a></li>
+          <li><a href="#samsung">Samsung</a></li>
+          <li><a href="#ipad">iPad</a></li>
+          <li><a href="#mac">Mac</a></li>
+          <li><a href="#accesorios">Accesorios</a></li>
+          <li><a href="#outlet">Outlet / Full Saldos</a></li>
+        </ul>
+      </nav>
+
+      <!-- Navegación de ayuda -->
+      <nav class="footer-nav" aria-label="Ayuda y soporte">
+        <h3 class="footer-nav__title">Ayuda</h3>
+        <ul role="list">
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+          <li><a href="#garantia">Política de garantía</a></li>
+          <li><a href="#devoluciones">Devoluciones</a></li>
+          <li><a href="#envios">Envíos</a></li>
+          <li><a href="#contacto">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+      <!-- Navegación legal -->
+      <nav class="footer-nav" aria-label="Información legal">
+        <h3 class="footer-nav__title">Legal</h3>
+        <ul role="list">
+          <li><a href="#privacidad">Aviso de privacidad</a></li>
+          <li><a href="#terminos">Términos y condiciones</a></li>
+          <li><a href="#cookies">Política de cookies</a></li>
+        </ul>
+      </nav>
+
+      <!-- Contacto -->
+      <address class="footer-contact" aria-label="Información de contacto">
+        <h3 class="footer-nav__title">Contáctanos</h3>
+        <ul role="list">
+          <li>
+            <img src="img/message-circle.svg" alt="" aria-hidden="true" width="18" height="18" />
+            <a href="https://wa.me/521234567890" target="_blank" rel="noopener noreferrer">+52 123 456 7890</a>
+          </li>
+          <li>
+            <img src="img/mail.svg" alt="" aria-hidden="true" width="18" height="18" />
+            <a href="mailto:hola@reconnect.mx">hola@reconnect.mx</a>
+          </li>
+          <li>
+            <img src="img/clock.svg" alt="" aria-hidden="true" width="18" height="18" />
+            Lun – Sáb: 9:00 – 19:00 hrs
+          </li>
+        </ul>
+      </address>
+
+    </div>
+
+    <!-- Barra inferior del footer -->
+    <div class="footer-bottom">
+      <p>
+        <small>
+          &copy; <span id="current-year"></span> ReConnect. Todos los derechos reservados.
+        </small>
+      </p>
+      <p>
+        <small>
+          *Precios en MXN. Sujetos a cambios sin previo aviso. Consulta términos y condiciones en promociones vigentes.
+        </small>
+      </p>
+    </div>
+  </footer>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script>
+    // Año dinámico en footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Toggle menú móvil
+    const navToggle = document.querySelector('.nav-toggle');
+    const mainMenu = document.getElementById('main-menu');
+    if (navToggle && mainMenu) {
+      navToggle.addEventListener('click', () => {
+        const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+        navToggle.setAttribute('aria-expanded', String(!isExpanded));
+        mainMenu.classList.toggle('is-open');
+      });
+    }
+
+    // Toggle submenús con teclado y clic
+    document.querySelectorAll('.nav-item.has-dropdown').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+        // Cerrar otros
+        document.querySelectorAll('.nav-item.has-dropdown').forEach(other => {
+          if (other !== btn) {
+            other.setAttribute('aria-expanded', 'false');
+            other.nextElementSibling?.classList.remove('is-open');
+          }
+        });
+        btn.setAttribute('aria-expanded', String(!isExpanded));
+        btn.nextElementSibling?.classList.toggle('is-open');
+      });
+    });
+
+    // Filtros del catálogo
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.setAttribute('aria-pressed', 'false'));
+        btn.setAttribute('aria-pressed', 'true');
+        // Aquí el compañero de CSS puede agregar lógica de filtrado real
+      });
+    });
+  </script>
+
+</body>
+</html>
