@@ -43,7 +43,7 @@ El desarrollo de este proyecto se llevó a cabo de manera colaborativa, aplicand
 * Se crearon *wireframes* iniciales para definir la estructura.
 * Se desarrolló el prototipo de alta fidelidad definiendo la paleta de colores (enfocada en tecnología y ecología), tipografía y componentes (botones, tarjetas de productos).
 * Se utilizó la nube de Figma para gestionar versiones, compartir el enlace con el equipo y dejar comentarios de retroalimentación en tiempo real.
-* 🔗 **[Enlace al Prototipo Interactivo en Figma](https://www.figma.com/make/7LyfjpmVxdCCnfPDtxWW6W/Prototipo-de-p%C3%A1gina-web?t=j5b5ND8J5Jj7TfO4-1)**
+* 🔗 **[Enlace al Prototipo Interactivo en Figma](https://www.figma.com/make/7LyfjpmVxdCCnfPDtxWW6W/Prototipo-de-p%C3%A1gina-web?t=7yEPUNsWTTkbcExT-20&fullscreen=1)**
 
 ### 2. Fase de Desarrollo (HTML/CSS)
 * Implementación del diseño a código utilizando únicamente HTML puro y CSS (sin frameworks para solidificar las bases de maquetación).
