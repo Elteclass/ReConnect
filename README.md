@@ -52,6 +52,7 @@ El desarrollo de este proyecto se llevó a cabo de manera colaborativa, aplicand
 ### 3. Fase de Auditoría y Validación
 Para garantizar la calidad del sitio, se sometió a pruebas rigurosas utilizando:
 * **Google Lighthouse:** Para medir Rendimiento, Accesibilidad, Mejores Prácticas y SEO. *(Puntuación objetivo: >90 en Accesibilidad).*
-* **WAVE (Web Accessibility Evaluation Tool):** Para identificar y corregir errores de contraste, falta de etiquetas ARIA y problemas de navegación estructural.
-* 🔗 **[Enlace al Reporte de Auditoría / Capturas de Pantalla](Aquí_va_tu_link)**
+* Captura de pantalla de análisis de lighthouse (Calificacion promedio: 100):
+  <img width="1913" height="883" alt="Screenshot 2026-03-11 181647" src="https://github.com/user-attachments/assets/f81b84bb-b384-4dcb-8e06-d4478fa65d65" />
+
 
